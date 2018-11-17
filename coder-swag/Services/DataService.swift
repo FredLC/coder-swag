@@ -19,10 +19,10 @@ class DataService {
     ]
     
     private let hats = [
-        Product(title: "Devslopes Logo Graphic Beanie", price: "$18", imageName: "hats01.png"),
-        Product(title: "Devslopes Logo Hat Black", price: "$22", imageName: "hats02.png"),
-        Product(title: "Devslopes Logo Hat White", price: "$22", imageName: "hats03.png"),
-        Product(title: "Devslopes Logo Snapback", price: "$20", imageName: "hats04.png")
+        Product(title: "Devslopes Logo Graphic Beanie", price: "$18", imageName: "hat01.png"),
+        Product(title: "Devslopes Logo Hat Black", price: "$22", imageName: "hat02.png"),
+        Product(title: "Devslopes Logo Hat White", price: "$22", imageName: "hat03.png"),
+        Product(title: "Devslopes Logo Snapback", price: "$20", imageName: "hat04.png")
     ]
     
     private let hoodies = [
