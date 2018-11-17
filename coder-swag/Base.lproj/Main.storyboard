@@ -83,11 +83,110 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="613-wJ-Xmh"/>
                     <connections>
                         <outlet property="categoryTable" destination="BOz-h0-yJw" id="DtI-a2-SfA"/>
+                        <segue destination="zih-gK-qPs" kind="show" id="AvG-pl-Ssy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773.60000000000002" y="-564.46776611694156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EgR-Fw-bJT">
+            <objects>
+                <viewController id="zih-gK-qPs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i3Q-8T-ZmH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWB-I8-swR">
+                                <rect key="frame" x="16" y="30" width="165" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="75X-17-Wsi"/>
+                                    <constraint firstAttribute="height" constant="24" id="JTl-z8-Ruc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ogu-ef-iL3">
+                                <rect key="frame" x="0.0" y="70" width="375" height="533"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Elo-Wf-h3H">
+                                    <size key="itemSize" width="181" height="276"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TlB-wj-Yin" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="276"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="276"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt01" translatesAutoresizingMaskIntoConstraints="NO" id="Jzc-5A-ArZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="178"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="178" id="SXn-ai-tVs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes Logo Graphic T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-p0-K81">
+                                                    <rect key="frame" x="12" y="188" width="157" height="43"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="43" id="p1v-PV-ocd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" red="0.18215948539942051" green="0.18215948539942051" blue="0.18215948539942051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwW-pM-NNy">
+                                                    <rect key="frame" x="12" y="241" width="157" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="plO-Zw-KOa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Jzc-5A-ArZ" secondAttribute="trailing" id="0LI-WH-P1z"/>
+                                            <constraint firstItem="Jzc-5A-ArZ" firstAttribute="top" secondItem="TlB-wj-Yin" secondAttribute="top" id="AYn-eA-QA4"/>
+                                            <constraint firstItem="CSb-p0-K81" firstAttribute="leading" secondItem="TlB-wj-Yin" secondAttribute="leadingMargin" constant="4" id="GwB-kC-1Py"/>
+                                            <constraint firstItem="TwW-pM-NNy" firstAttribute="leading" secondItem="TlB-wj-Yin" secondAttribute="leadingMargin" constant="4" id="HCT-a6-CRR"/>
+                                            <constraint firstItem="TwW-pM-NNy" firstAttribute="top" secondItem="CSb-p0-K81" secondAttribute="bottom" constant="10" id="JJk-Jv-5Ow"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="TwW-pM-NNy" secondAttribute="trailing" constant="4" id="Jyn-zm-3i9"/>
+                                            <constraint firstItem="Jzc-5A-ArZ" firstAttribute="leading" secondItem="TlB-wj-Yin" secondAttribute="leading" id="agL-8h-6yH"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="CSb-p0-K81" secondAttribute="trailing" constant="4" id="eqI-Eh-mGK"/>
+                                            <constraint firstItem="CSb-p0-K81" firstAttribute="top" secondItem="Jzc-5A-ArZ" secondAttribute="bottom" constant="10" id="wGH-31-RNb"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="productImage" destination="Jzc-5A-ArZ" id="10X-LY-kbk"/>
+                                            <outlet property="productPrice" destination="TwW-pM-NNy" id="1Kl-sE-tZy"/>
+                                            <outlet property="productTitle" destination="CSb-p0-K81" id="gCU-LS-1oc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iWB-I8-swR" firstAttribute="top" secondItem="jub-sY-ebK" secondAttribute="top" constant="30" id="5LY-3a-w6B"/>
+                            <constraint firstItem="jub-sY-ebK" firstAttribute="bottom" secondItem="ogu-ef-iL3" secondAttribute="bottom" id="8ZX-J0-l85"/>
+                            <constraint firstItem="ogu-ef-iL3" firstAttribute="leading" secondItem="jub-sY-ebK" secondAttribute="leading" id="A6t-G4-m5e"/>
+                            <constraint firstItem="ogu-ef-iL3" firstAttribute="top" secondItem="iWB-I8-swR" secondAttribute="bottom" constant="16" id="pT5-K2-Y2n"/>
+                            <constraint firstItem="jub-sY-ebK" firstAttribute="trailing" secondItem="ogu-ef-iL3" secondAttribute="trailing" id="u73-Me-dil"/>
+                            <constraint firstItem="iWB-I8-swR" firstAttribute="leading" secondItem="jub-sY-ebK" secondAttribute="leading" constant="16" id="y2O-5G-qnb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jub-sY-ebK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29x-y9-A5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zye-kD-cGF">
@@ -97,6 +196,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="6pK-tU-O1i">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.3411764705882353" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,6 +213,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="shirt01" width="500" height="500"/>
         <image name="shirts" width="1024" height="703"/>
     </resources>
 </document>
